@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Votacao</title>
+  </head>
+
+<body>
+  <h1>Votação</h1>
+  Idade: <input type="number" name="txtidade" id="txtidade">
+  <input type="button" value="Verificar" onclick="calcular()">
+  <div id="texto"></div>
+  <script>
+    function calcular() {
+      var idade = window.document.getElementById('txtidade')
+      var idv = Number(idade.value)
+      texto.innerHTML = (`Se você tem ${idv} anos`)
+        if(idv < '16') {
+      texto.innerHTML += `<p>Não vota!</p>`
+    } else if (idv >='16' && idv <'18' || idv >= '65'){
+      texto.innerHTML += `<p>Seu voto é facultativo</p>`
+    } else if (idv >= '18' && idv < '65') {
+      texto.innerHTML += `<p>Seu voto é obrigatório</p>`
+    }
+    }
+  </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nacionalidade</title>
+
+    <style>
+
+      section {
+        background: rgb(59, 149, 138);
+        border-radius:5px;
+        text-align: center;
+        height: 400px;
+      }
+
+      h1{
+        padding: 40px;
+      }
+
+      input {
+        border-radius: 10px;
+      }
+
+      input#pais00 {
+        width: 300px;
+        height:20px;
+        text-align: center;
+      }
+      input#botao {
+        margin-top: 20px;
+      }
+
+      div#res {
+        margin-top: 20px;
+      }
+
+    </style>
+
+  </head>
+
+<body>
+<section>
+  <h1>Buscador de Nacionalidade</h1>
+  <p>Insira seu país de origem</p>
+<input type="pais" id="pais00"> <br>
+<input type="button" id="botao"value="Buscar" onclick="clicar()" onclick="carregar()">
+<div id="res"></div>
+
+<div id="foto">
+  <img id="imagem" src="">
+</div>
+</section>
+
+  <script>
+
+    function clicar (){
+      var pa01 = window.document.getElementById('pais00')
+      var pa = (pa01.value)
+      res.innerHTML = `Se você nasceu em ${pa}, `
+        if (pa = 'brasil') {
+        res.innerHTML += `então você é brasileiro!`
+    } else {
+        res.innerHTML += `então você é estrangeiro!`
+    }
+  }
+  </script>
+
+  </body>
+
+</html>

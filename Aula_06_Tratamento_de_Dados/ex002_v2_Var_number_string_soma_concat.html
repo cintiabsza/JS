@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Meu primeiro programa</title>
+  </head>
+  <body>
+    <script>
+    var nome = window.prompt('Qual é o seu nome?')
+    window.alert('Muito prazer, ' + nome)
+    var n1 = Number(window.prompt('Digite um número'))
+    var n2 = Number(window.prompt('Digite outro número'))
+    var s = n1 + n2
+    window.alert('A soma dos números que você escolheu é ' + s)
+    document.write('Como você está?</br>')
+    var n3 = nome.length
+    document.write(`O seu nome tem ${n3} letras</br>`)
+    document.write(`O seu nome em maísculo é ${nome.toUpperCase()}</br>`)
+    document.write(`O seu nome em minusculo é ${nome.toLowerCase()}</br>`)
+    var n4 = String(window.prompt('Digite um número'))
+    var n5 = String(window.prompt('Digite outro número'))
+    var sum = n4 + n5
+    var premio = 1500
+    document.write(`Quando juntamos os numeros que você escolheu temos ${sum}</br>`)
+    document.write(`O valor do seu premio é ${premio.toLocaleString('pt-br', {style:'currency', currency:'BRL'})} reais`)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dia da Semana!</title>
+  </head>
+
+<body>
+  <h1>Que dia é hoje?</h1>
+  Calendário: <input type="date" name="txtdia" id="txtdia">
+  <input type="button" value="Verificar" onclick="calcular()">
+  <div id="texto"></div>
+  <script>
+    function calcular() {
+      var agora = new Date()
+      var diaSem = agora.getDay()
+      var day = window.document.getElementById('txtdia')
+        switch (diaSem) {
+      case 0:
+      texto.innerHTML = (`Hoje é Domingo`)
+        break
+      case 2:
+      texto.innerHTML = (`Hoje é Segunda-feira`)
+        break
+      case 3:
+      texto.innerHTML = (`Hoje é Quarta-feira`)
+        break
+      case 4:
+      texto.innerHTML = (`Hoje é Quinta-feira`)
+        break
+      case 5:
+      texto.innerHTML = (`Hoje é Sexta-feira`)
+        break
+      case 7:
+      texto.innerHTML = (`Hoje é Sábado`)
+        break;
+      default:
+      }
+
+}
+
+
+
+  </script>
+
+  </body>
+
+</html>

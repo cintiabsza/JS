@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Olha a Hora!</title>
+  </head>
+
+<body>
+  <h1>Que horas são?</h1>
+  Horários: <input type="number" name="txtidade" id="txthora">
+  <input type="button" value="Verificar" onclick="calcular()">
+  <div id="texto"></div>
+  <script>
+    function calcular() {
+      var agora = new Date()
+      var hora = agora.getHours()
+      var h = window.document.getElementById('txthora')
+      var idv = Number(h.value)
+      texto.innerHTML = (`Agora são exatamente ${hora} horas`)
+        if(hora < '12') {
+      texto.innerHTML += `<p>Bom dia!</p>`
+    } else if (hora >='12' && hora <='18'){
+      texto.innerHTML += `<p>Boa tarde</p>`
+    } else if (hora > '18' && hora < '24') {
+      texto.innerHTML += `<p>Boa noite</p>`
+    }
+
+}
+  </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eventos DOM</title>
+<style>
+
+
+div#quadrado {
+  background: salmon;
+  height:200px;
+  text-align: center;
+  line-height: 150px;
+  border-radius: 10px;
+}
+
+
+div#foto {
+  margin-top: 100px;
+  text-align: center;
+}
+div#imagem {
+  width: 600px;
+  border-radius: 20px;
+
+}
+
+</style>
+  </head>
+
+<body>
+  <div id='quadrado' onclick="clicar()" onmousemove="entrar()" onmouseout="sair()">
+    <p>Olá!</p>
+  </div>
+
+  <div id='foto'>
+    <img id='imagem' src="">
+</div>
+
+<script>
+
+var quad = window.document.getElementById('quadrado')
+var img = window.document.getElementById('imagem')
+
+function entrar() {
+  quad.innerText=('Entrou')
+  quad.style.background="purple"
+  quad.style.color="white"
+  img.src = 'fotonoite.png'
+}
+
+function clicar(){
+  quad.innerText='Clicou!'
+  quad.style.background="green"
+  img.src = 'fotomanha.png'
+
+}
+
+function sair() {
+  quad.innerText='Saiu!'
+  quad.style.background="salmon"
+  img.src = 'fototarde.png'
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+ body {
+   background: rgb(102, 148, 148);
+   font: normal 10pt Arial;
+ }
+
+ header {
+   color: white;
+   text-align: center;
+ }
+
+ section {
+   background: white;
+   border-radius: 10px;
+   padding: 15px;
+   width: 400px;
+   margin: auto;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0363);
+ }
+
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+#txtano {
+  border-radius: 10px;
+  text-align: center;
+  width: 80px;
+}
+
+#vrf {
+  text-align: center;
+}
+
+#check {
+  border-radius: 10px;
+  background-color: rgb(183, 194, 190);
+  width: 80px;
+  height: 20px;
+}
+
+#res {
+  text-align: center;
+}

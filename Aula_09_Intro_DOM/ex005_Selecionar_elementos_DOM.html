@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="pt-br"
+ <head>
+   <meta charset="utf-8">
+   <title>Primeiros passos com DOM</title>
+   <style>
+   body {
+     background-color: rgb(68,125,199); /*comentário em CSS*/
+     color: white;
+     font: normal 18pt arial;
+   }
+   </style>
+</head>
+<body>
+  <h1>Iniciando os estudos DOM</h1>
+  <p>Aqui vai o resultado </br></p>
+  <p>Aprendendo a usar o <strong>DOM</strong> em JAvaScript</p>
+  <div id="clique">Clique em mim</div>
+  <div class="nclique">Melhor não clicar agora</div>
+  <div name="perdeu">Se clicou, perdeu!</div>
+  <div id="acabou">Agora acabou a brincadeira</div>
+  <div class="tchau">Vou pra casa. Tchau!</div>
+  <script>
+  var p1 = window.document.getElementsByTagName('p')[0]
+  document.write(p1.innerHTML)
+  var p2 = window.document.getElementById('clique')
+  p2.style.background = 'green'
+  var p3 = window.document.getElementsByClassName('nclique')[0]
+  p3.innerHTML = 'Não clique nunca!'
+  var p4 = window.document.getElementsByName('perdeu')[0]
+  p4.style.background = 'purple'
+  var p5 = window.document.querySelector('div#acabou')
+  p5.style.background = 'pink'
+  var p6 = window.document.querySelector('div.tchau')
+  window.document.write('Adeus!')
+  window.document.write('Nunca mais clique' + p6.innerHTML)
+  p6.style.background = 'grey'
+  </script>
+</body>
+</html>

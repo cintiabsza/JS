@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eventos DOM</title>
+
+      <style>
+
+        h1 {
+        color: white;
+        }
+
+        div#calc{
+        text-align: center;
+        background: purple;
+        border-radius: 10px;
+        width: 60%;
+        height: 600px;
+        margin-left: 250px;
+        padding: 20px;
+      }
+      div#res{
+        margin-top: 60px;
+        color: white;
+        font-size: 20px;
+      }
+      input{
+        border-radius: 10px;
+        text-align: center;
+      }
+      </style>
+  </head>
+  <body>
+  <div id="calc">
+    <h1>Calculadora</h1>
+    <input type="number" name="n" id="n1"> +
+    <input type="number" name="n" id="n2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <script>
+      function somar() {
+      var t1 = window.document.getElementById('n1')
+      var t2 = window.document.getElementById('n2')
+      var c = window.document.getElementById('res')
+      var an = Number(t1.value)
+      var bn = Number(t2.value)
+      var d = an + bn
+      c.innerHTML= (`A soma é igual a ${d}`)
+      var e = window.document.getElementById('calc')
+      e.style.background= 'salmonw'
+    }
+    </script>
+    <div/>
+  </body>
+</html>

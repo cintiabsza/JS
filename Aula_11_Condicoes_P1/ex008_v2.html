@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Detran</title>
+
+    <style>
+
+
+    </style>
+
+  </head>
+
+<body>
+  <section>
+  <div>
+  <h1>Sistema de Multas Online</h1>
+  Confira aqui <input type="number" name="" value="" id="tvel">
+  <input type="button" name="" value="conferir" onclick="calcular()">
+  </div>
+
+  <div id="tres">
+  </div>
+
+  </section>
+
+  <script>
+
+  function calcular() {
+  var vel = window.document.getElementById('tvel')
+  var v = Number(vel.value)
+  var res = window.document.getElementById('tres')
+    res.innerHTML = (`<p>Sua velocidade é ${v} km/h</p>`)
+    if (v >= 120) {
+      res.innerHTML += 'Multado!'
+    } else {
+      res.innerHTML += 'Tudo ok. Pode seguir viagem!'
+    }
+
+  }
+  </script>
+
+  </body>
+
+</html>
