@@ -8,3 +8,5 @@
 <a href= "https://cintiabsza.github.io/JS/Aula_14_Repeticoes_P2/Exerc_05_Repeticoes_tabuada_while/exerc01_Repeticoes_tabuada.html"> Exerc repeticoes tabuada
 
 <a href= "https://cintiabsza.github.io/JS/Aula_15_Variaveis_compostas_arrays/exerc01_Repeticoes_For_Arrays.html"> Exerc repeticoes arrays
+
+<a href= "https://cintiabsza.github.io/JS/Aula_16_Funcoes/exercicio/exerc01_Analisador_de_numeros.html"> Exerc funcoes analisador de números
